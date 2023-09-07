@@ -12,7 +12,7 @@
 **Prerequisites**
 
 * Miniconda3.
-Tested with conda 4.8.1.
+Tested with conda 4.10.3.
 ```which conda``` should return the path to the executable.
 If you don't have Miniconda3 installed, you could download and install it with:
 ```
@@ -21,7 +21,7 @@ chmod 755 Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
 ```
 
-* A fastq file containing reads from one sample. Tested with files produced with Guppy v4.2.
+* A fastq file containing reads from one sample.
 * A fasta file containing reference sequence (e.g. hg38)
 * Coordinates of flanking regions (e.g. regions flanking the repeat)
 
