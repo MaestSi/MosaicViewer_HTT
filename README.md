@@ -1,6 +1,6 @@
-# MosaicViewer_FMR1
+# MosaicViewer_HTT
 
-**MosaicViewer_FMR1** is a pipeline for schematic visualization of alleles with somatic mosaicism. Due to mosaicism, long sequencing reads can not be collapsed into an accurate consensus sequence. Therefore, only repeat annotation of each single read can be performed. MosaicViewer_FMR1 integrates tool for performing repeat annotation of noisy long reads, performs alignment to left and right flanking regions, and generates "simplified" reads, for easier identification of alternative motifs in IGV visualization. The pipeline has only been used for FMR1 alleles, but its applicability can be extended with minor modification.
+**MosaicViewer_HTT** is a pipeline for schematic visualization of alleles with somatic mosaicism. Due to mosaicism, long sequencing reads can not be collapsed into an accurate consensus sequence. Therefore, only repeat annotation of each single read can be performed. MosaicViewer_HTT integrates tool for performing repeat annotation of noisy long reads, performs alignment to left and right flanking regions, and generates "simplified" reads, for easier identification of alternative motifs in IGV visualization. The pipeline has only been used for HTT alleles, but its applicability can be extended with minor modification.
 
 <p align="center">
   <img src="Figures/MosaicViewer.png" alt="drawing" width="400" title="MosaicViewer_pipeline">
@@ -28,8 +28,8 @@ chmod 755 Miniconda3-latest-Linux-x86_64.sh
 **Installation**
 
 ```
-git clone https://github.com/MaestSi/MosaicViewer_FMR1.git
-cd MosaicViewer_FMR1
+git clone https://github.com/MaestSi/MosaicViewer_HTT.git
+cd MosaicViewer_HTT
 chmod 755 *
 ./install.sh
 ```
@@ -49,7 +49,7 @@ Note: the file **config_MosaicViewer.sh** should be in the same directory. It cu
 Outputs:
 
 * $SAMPLE_NAME"\_trimmed\_"$SIDE".bam": bam file containing expanded reads aligned to $GENE_NAME"\_masked\_reference\_"$SIDE".fasta"
-* $SAMPLE_NAME"\_trimmed\_simplified\_"$SIDE"\_final.bam": bam file containing simplified version of expanded reads aligned to $GENE_NAME"\_masked\_reference\_"$SIDE".fasta", where the sequence of each identified repeat has been replaced with a single repeated nucleotide (CGG -> GGG; other -> N)
+* $SAMPLE_NAME"\_trimmed\_simplified\_"$SIDE"\_final.bam": bam file containing simplified version of expanded reads aligned to $GENE_NAME"\_masked\_reference\_"$SIDE".fasta", where the sequence of each identified repeat has been replaced with a single repeated nucleotide (CAG -> C; CGG -> GGG; CAA -> AAA; other -> N)
 * Other temporary files
 
 ## Results visualization
