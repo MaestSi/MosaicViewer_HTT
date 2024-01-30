@@ -48,7 +48,7 @@ As a first step, open the **config_MosaicViewer.sh** file with a text editor and
 
 Usage: ./MosaicViewer.sh
 
-Note: the file **config_MosaicViewer.sh** should be in the same directory. It currently supports CGG repeat motif.
+Note: the file **config_MosaicViewer.sh** should be in the same directory. It currently supports CAG, CGG and CAA repeat motifs.
 
 Outputs:
 
