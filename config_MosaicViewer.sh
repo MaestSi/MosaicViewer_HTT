@@ -24,7 +24,8 @@ FASTQ=/path/to/sample.fastq
 REFERENCE=/path/to/fasta/reference
 #FW_PRIMER_COORD and RV_PRIMER_COORD are coordinates of primers for in-silico PCR
 FW_PRIMER_COORD="chr4:3074677-3074777"
-RV_PRIMER_COORD="chr4:3075039-3075139"
+#RV_PRIMER_COORD="chr4:3075039-3075139" #intron1
+RV_PRIMER_COORD="4:3075050-3075088" #exon1
 #GENE_NAME
 GENE_NAME="HTT"
 #GENE_STRAND is used for calculating the reverse-complement of reference region is the gene is in the minus strand
