@@ -23,8 +23,8 @@ FASTQ=/path/to/sample.fastq
 #REFERENCE is the file used for extracting flaking regions
 REFERENCE=/path/to/fasta/reference
 #FW_PRIMER_COORD and RV_PRIMER_COORD are coordinates of primers for in-silico PCR
-FW_PRIMER_COORD="chr4:3074677-3074777"
-#RV_PRIMER_COORD="chr4:3075039-3075139" #intron1
+FW_PRIMER_COORD="4:3074677-3074777"
+#RV_PRIMER_COORD="4:3075039-3075139" #intron1
 RV_PRIMER_COORD="4:3075050-3075088" #exon1
 #GENE_NAME
 GENE_NAME="HTT"
@@ -38,16 +38,16 @@ MINLENGTH=150
 #left alignment
 #SIDE="left"
 #FLANKING_REF_COORD are coordinates of genomic regions used to create a reference for alignment
-#FLANKING_REF_COORD="chr4:3074677-3074877"
+#FLANKING_REF_COORD="4:3074677-3074877"
 #FLANKING_COORD_TRIMMED are coordinates of genomic regions used to trim the other flanking region
-#FLANKING_COORD_TRIMMED="chr4:3074939-3075139"
+#FLANKING_COORD_TRIMMED="4:3074939-3075139"
 
 #right alignment
 SIDE="right"
 #FLANKING_REF_COORD are coordinates of genomic regions used to create a reference for alignment
-FLANKING_REF_COORD="chr4:3074939-3075139"
+FLANKING_REF_COORD="4:3074939-3075139"
 #FLANKING_COORD_TRIMMED are coordinates of genomic regions used to trim the other flanking region
-FLANKING_COORD_TRIMMED="chr4:3074677-3074877"
+FLANKING_COORD_TRIMMED="4:3074677-3074877"
 
 ########################################################################################################
 PIPELINE_DIR="/path/to/MosaicViewer_HTT"
